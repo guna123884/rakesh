@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./header.css";
+import house from "../../assets/house.webp";
+import fields from "../../assets/fields.jpeg";
 
 const Header = () => {
   return (
@@ -10,13 +12,13 @@ const Header = () => {
         className={({ isActive }) => (isActive ? "activeClass" : "")}
         end
       >
-        House
+        <img src={house} /> House
       </NavLink>
       <NavLink
         to="/fields"
         className={({ isActive }) => (isActive ? "activeClass" : "")}
       >
-        Fields
+        <img src={fields} /> Fields
       </NavLink>
     </div>
   );
