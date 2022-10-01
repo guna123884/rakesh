@@ -1,15 +1,19 @@
 .App {
   text-align: center;
   padding: 0 30px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .content {
-  height: calc(100vh - 161px);
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1;
 }
 .content > h1 {
-  padding: 100px;
+  padding: 70px;
   border: 1px solid gray;
+  border-radius: 15px;
 }
